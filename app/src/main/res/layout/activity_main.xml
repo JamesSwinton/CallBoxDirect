@@ -41,7 +41,7 @@
         android:layout_weight="5"
         android:gravity="center"
         android:fontFamily="sans-serif"
-        android:text="Press And Hold to talk to an Assistant"
+        android:text="@string/press_for_help"
         android:textSize="28pt"/>
 
       <ImageView

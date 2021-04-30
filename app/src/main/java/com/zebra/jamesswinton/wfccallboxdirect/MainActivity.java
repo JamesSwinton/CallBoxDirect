@@ -72,11 +72,11 @@ public class MainActivity extends AppCompatActivity
         if(event.getAction() == MotionEvent.ACTION_DOWN) {
             sendBroadcast(new Intent(PTTPressed));
             mDataBinding.pttButton.setImageResource(R.drawable.ic_mic);
-            mDataBinding.statusHelperText.setText(getString(R.string.press_for_help));
+            mDataBinding.statusHelperText.setText(getString(R.string.release_to_hear));
         } else if (event.getAction() == MotionEvent.ACTION_UP) {
             sendBroadcast(new Intent(PTTReleased));
             mDataBinding.pttButton.setImageResource(R.drawable.ic_mic_off);
-            mDataBinding.statusHelperText.setText(getString(R.string.release_to_hear));
+            mDataBinding.statusHelperText.setText(getString(R.string.press_for_help));
         }
         return true;
     }
